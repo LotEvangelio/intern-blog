@@ -1,0 +1,20 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>{% block head_title %}My Travelogue{% endblock head_title %}</title>
+    </head>
+
+    <header>
+      <nav>
+        <a href="" class="">Home</a>
+        <a href="">About</a>
+      </nav>
+
+
+    </header>
+    <body>
+        {% block content %}{% endblock content %}
+    </body>
+</html>
