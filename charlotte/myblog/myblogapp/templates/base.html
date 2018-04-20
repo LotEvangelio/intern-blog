@@ -2,20 +2,9 @@
 <!DOCTYPE html>
 <html lang=en>
     <head>
-        <title>{% block head_title %}Lotty's Bloggy{% endblock head_title %}</title>
+        <lnk rel="stylesheet" type="text/css" href="{%static 'css/style.css'%}">
+        <title>{% block head_title %}My blog{% endblock head_title %}</title>
     </head>
-
-    <header>
-      <nav class="nav">
-        <a href="Home" class="">Home</a>
-        <a href="About">About</a>
-        <nav class="dropdownbtn">
-
-
-      </nav>
-          <h1>Heading:</h1>
-
-    </header>
     <body>
         {% block content %}{% endblock content %}
     </body>

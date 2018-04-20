@@ -12,7 +12,7 @@ class IndexView(View):
     def get(self,request,pk,*args, **kwargs):
         index = Index.objects.get(pk=pk)
         post_list = index.post_set.all()
-        paginator = Paginator(post_list, 2)
+        paginator = Paginator(post_list, 6)
         page = request.GET.get('page')
         post = paginator.get_page(page)
         

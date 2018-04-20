@@ -24,7 +24,7 @@
           {% endif %}
         {% endfor %}
         <p>Category: {{ post.category }}</p>
-        <a href="{% url 'blog:post-list' post.id %}">{{ post_id}}</a>
+        <a href="{% url 'blog:post-list' post.id %}">Post_list</a>
         <p>***************************************************************************************************************************************************************</p>
 
       {% endfor %}
@@ -55,6 +55,4 @@
       {% endif %}
     </span>
 </div>
-
-
 {% endblock %}
