@@ -40,10 +40,10 @@ class Category(models.Model):
     title = models.CharField(max_length=150)
 
     def __str__(self):
-        return '{}'.format(self.category)
+        return '{}'.format(self.title)
 
 class Tag(models.Model):
     title = models.CharField(max_length=150)
 
     def __str__(self):
-        return '{}'.format(self.tag)
+        return '{}'.format(self.title)
