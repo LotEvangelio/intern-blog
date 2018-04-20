@@ -27,5 +27,5 @@ class PostView(View):
 
     def get(self, request, post_id, *args, **kwargs):
          post = Post.objects.filter(id=post_id).order_by('-date_created')
-         context = {'objects_list.html':post}
+         context = {'object_list.':post}
          return render(request, "post_list.html", context)
